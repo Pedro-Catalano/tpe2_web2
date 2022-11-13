@@ -6,6 +6,7 @@ $router = new Router();
 
 // define la tabla de ruteo
 //(url,verb,controller,method)
+$router->setDefaultRoute('MovieApiController', 'error');
 //------------------------MOVIES------------------------------------
 $router->addRoute('movies', 'GET', 'MovieApiController', 'getMovies');
 $router->addRoute('movies', 'POST', 'MovieApiController', 'addMovie');

@@ -1,5 +1,7 @@
 <?php
-
+require_once "./api/MovieApiController.php";
+require_once "./api/DirectorApiController.php";
+require_once "./api/GenreApiController.php";
 class Route {
     private $url;
     private $verb;
@@ -30,6 +32,7 @@ class Route {
             } //es un parametro
             else
             $this->params[$part] = $partsURL[$key];
+
         }
         return true;
     }

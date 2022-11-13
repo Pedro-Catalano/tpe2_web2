@@ -23,7 +23,7 @@ class GenresModel{
         $query = $this->db->prepare("SELECT * FROM genres WHERE genre_id=?");
         $query->execute(array($id));
         $genre = $query->fetch(PDO::FETCH_OBJ);
-    
+        
         return $genre;
     
     }

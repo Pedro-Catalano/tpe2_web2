@@ -2,11 +2,12 @@ tpe2_web2
 
 movies
 Method      Url                 Code    Action
-GET         api/movies          200     devuelve un arreglo de peliculas
+GET         api/movies          200     devuelve un arreglo de peliculas (paginado, 6 items/pagina max)
                                             parametros
                                             sort    opcional    campo por el cual se quiere ordenar
-                                            order   opcional    orden por el cual se quiere ordenar asc o desc
-                                            genre   opcional    genero por el cual se quiere filtrar, debe ser un id   
+                                            order   opcional    orden por el cual se quiere ordenar asc o desc (por defecto asc)
+                                            genre   opcional    genero por el cual se quiere filtrar, debe ser un id
+                                            page    opcional    numero de pagina (por defecto 1)   
 GET         api/movies/:id      200     devuelve info de una pelicula especifica
 POST        api/movies          201     agrega una pelicula
 PUT         api/movies/:id      200     edita una pelicula especifica

@@ -1,20 +1,20 @@
 tpe2_web2
 
-movies
+### movies
 
 Method      Url                 Code    Action
 
 GET         api/movies          200     devuelve un arreglo de peliculas (paginado, 6 items/pagina max)
 
-                                            parametros
+                                        parametros
 
-                                            sort    opcional    campo por el cual se quiere ordenar
+                                        sort    opcional    campo por el cual se quiere ordenar
 
-                                            order   opcional    orden por el cual se quiere ordenar asc o desc (por defecto asc)
+                                        order   opcional    orden por el cual se quiere ordenar asc o desc (por defecto asc)
 
-                                            genre   opcional    genero por el cual se quiere filtrar, debe ser un id
+                                        genre   opcional    genero por el cual se quiere filtrar, debe ser un id
 
-                                            page    opcional    numero de pagina (por defecto 1)   
+                                        page    opcional    numero de pagina (por defecto 1)   
 
 GET         api/movies/:id      200     devuelve info de una pelicula especifica
 
@@ -25,7 +25,7 @@ PUT         api/movies/:id      200     edita una pelicula especifica
 DELETE      api/movies/:id      200     elimina una pelicula especifica
 
 
-directors
+### directors
 
 GET         api/directors       200     devuelve arreglo de directores
 
@@ -38,7 +38,7 @@ PUT         api/directors/:id   200     edita un director
 DELETE      api/directors/:id   200     elimina un director
 
 
-genres
+### genres
 
 GET         api/genres          200     devuelve arreglo de generos
 
